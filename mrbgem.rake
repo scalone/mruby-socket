@@ -8,6 +8,7 @@ MRuby::Gem::Specification.new('mruby-socket') do |spec|
   if ( /mswin|mingw|win32/ =~ RUBY_PLATFORM ) then
     spec.linker.libraries << "wsock32"
     spec.linker.libraries << "ws2_32"
+    spec.cc.defines << "_WIN32_WINNT=0x0501"
   end
 
   spec.add_dependency('mruby-io')
