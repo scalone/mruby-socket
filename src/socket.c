@@ -8,6 +8,7 @@
   #include <winsock2.h>
   #include <ws2tcpip.h>
   #include <windows.h>
+  #include "inet.h"
 
   #define SHUT_RDWR SD_BOTH
 #else
